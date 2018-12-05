@@ -62,4 +62,9 @@ if __name__ == "__main__":
 	# plt.imshow(wordcloud, interpolation="bilinear")
 	plt.imshow(wordcloud, interpolation="bilinear")
 	plt.axis("off")
+
+	os.chdir(ROOT)
+	plt.savefig('wordcloud-output.png', dpi=200, facecolor='w', edgecolor='w', format='png')
+
+
 	plt.show()
